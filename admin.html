@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ReWear</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html" class="active">Admin Panel</a></li>
+                    <li><a href="index.html" class="btn btn-outline">Logout</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-page">
+        <div class="container">
+            <h1>Admin Panel</h1>
+            
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="pending">Pending Approval</button>
+                <button class="admin-tab" data-tab="reported">Reported Items</button>
+                <button class="admin-tab" data-tab="users">User Management</button>
+            </div>
+            
+            <div class="admin-content">
+                <div id="pending" class="admin-section active">
+                    <div class="admin-items-list">
+                        <!-- Pending items will be loaded via JavaScript -->
+                    </div>
+                </div>
+                
+                <div id="reported" class="admin-section">
+                    <div class="admin-items-list">
+                        <!-- Reported items will be loaded via JavaScript -->
+                    </div>
+                </div>
+                
+                <div id="users" class="admin-section">
+                    <div class="admin-users-list">
+                        <!-- Users will be loaded via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="auth.html">Login</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="add-item.html">Add Item</a>
+</nav>

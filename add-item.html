@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List an Item | ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ReWear</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="add-item.html" class="active">List an Item</a></li>
+                    <li><a href="index.html" class="btn btn-outline">Logout</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="add-item-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>List a New Item</h1>
+                <p>Fill out the form below to add your item to the ReWear community.</p>
+            </div>
+            
+            <form class="add-item-form">
+                <div class="form-section">
+                    <h2>Item Photos</h2>
+                    <div class="image-upload">
+                        <div class="upload-area" id="dropArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop photos here or click to browse</p>
+                            <input type="file" id="fileInput" accept="image/*" multiple style="display: none;">
+                        </div>
+                        <div class="uploaded-images" id="uploadedImages">
+                            <!-- Uploaded thumbnails will appear here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h2>Item Details</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="title">Title*</label>
+                            <input type="text" id="title" placeholder="e.g., Blue Denim Jacket" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="category">Category*</label>
+                            <select id="category" required>
+                                <option value="">Select a category</option>
+                                <option value="tops">Tops</option>
+                                <option value="bottoms">Bottoms</option>
+                                <option value="dresses">Dresses</option>
+                                <option value="jackets">Jackets</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="accessories">Accessories</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="type">Type*</label>
+                            <input type="text" id="type" placeholder="e.g., Denim Jacket" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="size">Size*</label>
+                            <select id="size" required>
+                                <option value="">Select size</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="condition">Condition*</label>
+                            <select id="condition" required>
+                                <option value="">Select condition</option>
+                                <option value="new">New with tags</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="points">Points Value*</label>
+                            <input type="number" id="points" placeholder="e.g., 150" min="10" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description*</label>
+                        <textarea id="description" rows="5" placeholder="Describe your item in detail (color, brand, material, age, any flaws, etc.)" required></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h2>Additional Information</h2>
+                    <div class="form-group">
+                        <label for="tags">Tags (comma separated)</label>
+                        <input type="text" id="tags" placeholder="e.g., denim, jacket, spring, casual">
+                        <p class="help-text">Add relevant tags to help others find your item</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Where is this item available for exchange?">
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline">Cancel</button>
+                    <button type="submit" class="btn btn-primary">List Item</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/add-item.js"></script>
+</body>
+</html>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="auth.html">Login</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="add-item.html">Add Item</a>
+</nav>

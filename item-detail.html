@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details | ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ReWear</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="add-item.html">List an Item</a></li>
+                    <li><a href="index.html" class="btn btn-outline">Logout</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="item-detail-page">
+        <div class="container">
+            <a href="dashboard.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+            
+            <div class="item-detail-grid">
+                <div class="item-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Denim Jacket">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Thumbnail 1">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Thumbnail 2">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Thumbnail 3">
+                    </div>
+                </div>
+                
+                <div class="item-info">
+                    <h1>Denim Jacket</h1>
+                    <div class="item-meta">
+                        <span class="category">Jackets</span>
+                        <span class="condition">Excellent condition</span>
+                        <span class="points">150 points</span>
+                    </div>
+                    
+                    <div class="item-description">
+                        <h3>Description</h3>
+                        <p>Light blue denim jacket in excellent condition. Size M. Worn only a few times. Perfect for spring and fall weather. Brand is Levi's.</p>
+                    </div>
+                    
+                    <div class="item-specs">
+                        <h3>Details</h3>
+                        <ul>
+                            <li><strong>Type:</strong> Denim Jacket</li>
+                            <li><strong>Size:</strong> M</li>
+                            <li><strong>Color:</strong> Light Blue</li>
+                            <li><strong>Brand:</strong> Levi's</li>
+                            <li><strong>Material:</strong> 100% Cotton</li>
+                            <li><strong>Age:</strong> 1 year</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="uploader-info">
+                        <h3>Uploaded By</h3>
+                        <div class="uploader-card">
+                            <div class="uploader-pic">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                            </div>
+                            <div class="uploader-details">
+                                <h4>Sarah Johnson</h4>
+                                <p>Member since 2023</p>
+                                <div class="uploader-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.5 (12 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-actions">
+                        <button class="btn btn-primary btn-large">Request Swap</button>
+                        <button class="btn btn-secondary btn-large">Redeem with Points</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="similar-items">
+                <h2>Similar Items You Might Like</h2>
+                <div class="similar-items-grid">
+                    <!-- Similar items will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/item-detail.js"></script>
+</body>
+</html>
+<div id="swapSection">
+  <h3>Request Swap</h3>
+  <form id="swapForm">
+    <select id="swapItems">
+      <!-- Populated via JavaScript -->
+    </select>
+    <textarea id="swapMessage" placeholder="Your message"></textarea>
+    <button type="submit">Request Swap</button>
+  </form>
+</div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="auth.html">Login</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="add-item.html">Add Item</a>
+</nav>

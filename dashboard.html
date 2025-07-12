@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ReWear</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="add-item.html">List an Item</a></li>
+                    <li><a href="index.html" class="btn btn-outline">Logout</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="container">
+            <div class="dashboard-grid">
+                <aside class="sidebar">
+                    <div class="profile-summary">
+                        <div class="profile-pic">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile Picture">
+                        </div>
+                        <h3>Sarah Johnson</h3>
+                        <p class="points-balance">350 points</p>
+                        <a href="add-item.html" class="btn btn-primary">+ List New Item</a>
+                    </div>
+                    
+                    <nav class="dashboard-nav">
+                        <ul>
+                            <li><a href="#my-items" class="active"><i class="fas fa-tshirt"></i> My Items</a></li>
+                            <li><a href="#swap-requests"><i class="fas fa-exchange-alt"></i> Swap Requests</a></li>
+                            <li><a href="#messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                            <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <section class="main-content">
+                    <div id="my-items" class="dashboard-section active">
+                        <h2>My Listed Items</h2>
+                        <div class="items-grid">
+                            <!-- Items will be loaded via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div id="swap-requests" class="dashboard-section">
+                        <h2>Swap Requests</h2>
+                        <div class="requests-list">
+                            <!-- Requests will be loaded via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div id="messages" class="dashboard-section">
+                        <h2>Messages</h2>
+                        <div class="messages-list">
+                            <!-- Messages will be loaded via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div id="settings" class="dashboard-section">
+                        <h2>Account Settings</h2>
+                        <form class="settings-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" value="Sarah Johnson">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="sarah@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" value="New York, NY">
+                            </div>
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio">Fashion enthusiast looking to refresh my wardrobe sustainably!</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="auth.html">Login</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="add-item.html">Add Item</a>
+</nav>
